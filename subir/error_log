@@ -1,0 +1,22 @@
+[24-Jan-2024 23:25:10 UTC] PHP Warning:  imagecreatefromjpeg(): Filename cannot be empty in /home/ctwtvsxj/public_html/controlganado2/subir/controllers/subirController.php on line 44
+[24-Jan-2024 23:25:10 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ctwtvsxj/public_html/controlganado2/subir/controllers/subirController.php on line 45
+[24-Jan-2024 23:25:10 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ctwtvsxj/public_html/controlganado2/subir/controllers/subirController.php on line 46
+[24-Jan-2024 23:25:10 UTC] PHP Warning:  imagecopyresized() expects parameter 2 to be resource, boolean given in /home/ctwtvsxj/public_html/controlganado2/subir/controllers/subirController.php on line 48
+[24-Jan-2024 23:25:10 UTC] PHP Warning:  imagejpeg(miniaturas/foto.jpg): failed to open stream: No such file or directory in /home/ctwtvsxj/public_html/controlganado2/subir/controllers/subirController.php on line 49
+[24-Jan-2024 23:30:04 UTC] PHP Warning:  imagecreatefromjpeg(): Filename cannot be empty in /home/ctwtvsxj/public_html/controlganado2/subir/controllers/subirController.php on line 44
+[24-Jan-2024 23:30:04 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ctwtvsxj/public_html/controlganado2/subir/controllers/subirController.php on line 45
+[24-Jan-2024 23:30:04 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ctwtvsxj/public_html/controlganado2/subir/controllers/subirController.php on line 46
+[24-Jan-2024 23:30:04 UTC] PHP Warning:  imagecopyresized() expects parameter 2 to be resource, boolean given in /home/ctwtvsxj/public_html/controlganado2/subir/controllers/subirController.php on line 48
+[24-Jan-2024 23:31:03 UTC] PHP Warning:  imagecreatefromjpeg(): Filename cannot be empty in /home/ctwtvsxj/public_html/controlganado2/subir/controllers/subirController.php on line 44
+[24-Jan-2024 23:31:03 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ctwtvsxj/public_html/controlganado2/subir/controllers/subirController.php on line 45
+[24-Jan-2024 23:31:03 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ctwtvsxj/public_html/controlganado2/subir/controllers/subirController.php on line 46
+[24-Jan-2024 23:31:03 UTC] PHP Warning:  imagecopyresized() expects parameter 2 to be resource, boolean given in /home/ctwtvsxj/public_html/controlganado2/subir/controllers/subirController.php on line 48
+[24-Jan-2024 23:31:03 UTC] PHP Warning:  imagejpeg(../../miniaturas/foto.jpg): failed to open stream: No such file or directory in /home/ctwtvsxj/public_html/controlganado2/subir/controllers/subirController.php on line 49
+[24-Jan-2024 23:32:28 UTC] PHP Warning:  imagecreatefromjpeg(): Filename cannot be empty in /home/ctwtvsxj/public_html/controlganado2/subir/controllers/subirController.php on line 44
+[24-Jan-2024 23:32:28 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ctwtvsxj/public_html/controlganado2/subir/controllers/subirController.php on line 45
+[24-Jan-2024 23:32:28 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ctwtvsxj/public_html/controlganado2/subir/controllers/subirController.php on line 46
+[24-Jan-2024 23:32:28 UTC] PHP Warning:  imagecopyresized() expects parameter 2 to be resource, boolean given in /home/ctwtvsxj/public_html/controlganado2/subir/controllers/subirController.php on line 48
+[24-Jan-2024 23:33:34 UTC] PHP Warning:  imagecreatefromjpeg(): Filename cannot be empty in /home/ctwtvsxj/public_html/controlganado2/subir/controllers/subirController.php on line 44
+[24-Jan-2024 23:33:34 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ctwtvsxj/public_html/controlganado2/subir/controllers/subirController.php on line 45
+[24-Jan-2024 23:33:34 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ctwtvsxj/public_html/controlganado2/subir/controllers/subirController.php on line 46
+[24-Jan-2024 23:33:34 UTC] PHP Warning:  imagecopyresized() expects parameter 2 to be resource, boolean given in /home/ctwtvsxj/public_html/controlganado2/subir/controllers/subirController.php on line 48

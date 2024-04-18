@@ -1,0 +1,23 @@
+pendientes software de ganaderia 
+
+revisar grabar nuevo ganado 
+genero debe preguntar genero
+
+nombre de la base 
+base_controlganado
+
+usuario
+valderra_admin
+1973david
+
+la funcion que se dispara cuando hago click en el boton imagenes 
+verImagenGanadoModal
+
+realizarCargaArchivo
+
+
+truncate  imagenesGanado;
+update ganado set 	numeroImagenes = 0;
+borrar la imagenes de la carpara imagenes 
+
+verificar permisos de la carpeta imagenes 
