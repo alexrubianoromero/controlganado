@@ -15,6 +15,13 @@ class ImagenGanadoModel extends Conexion
         $imagenes = $this->get_table_assoc($consulta);
         return $imagenes;
     }
+    public function traerInfoImageneGanadoIdImagen($id)
+    {
+        $sql = "select * from imagenesGanado where id ='".$id."' ";
+        $consulta = mysql_query($sql,$this->connectMysql());
+        $infoImagen = mysql_fetch_assoc($consulta);
+        return $infoImagen;
+    }
     
     
     public function grabaregistroImagenesGanado($idGanado,$nombreIma,$ruta)
@@ -23,4 +30,11 @@ class ImagenGanadoModel extends Conexion
         values ('".$idGanado."','".$nombreIma."','".$ruta."')";
         $consulta = mysql_query($sql,$this->connectMysql());
     }
+
+    public function deleteImagenGanado($id)
+    {
+        $sql = "delete  from imagenesGanado where id ='".$id."' ";
+        $consulta = mysql_query($sql,$this->connectMysql());
+    }
+
 }

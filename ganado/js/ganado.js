@@ -346,15 +346,15 @@ function formuModificarGanado(idGanado)
     const http=new XMLHttpRequest();
     const url = 'ganado/ganado.php';
     http.onreadystatechange = function(){
-
+        
         if(this.readyState == 4 && this.status ==200){
-               document.getElementById("modalBodyModificarGanado").innerHTML  = this.responseText;
+            document.getElementById("modalBodyModificarGanado").innerHTML  = this.responseText;
         }
     };
     http.open("POST",url);
     http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     http.send('opcion=formuModificarGanado'
-            +'&idGanado='+idGanado
+    +'&idGanado='+idGanado
     );
 }
 
@@ -374,25 +374,25 @@ function actualizarGanado(idGanado)
     const http=new XMLHttpRequest();
     const url = 'ganado/ganado.php';
     http.onreadystatechange = function(){
-
+        
         if(this.readyState == 4 && this.status ==200){
-               document.getElementById("modalBodyModificarGanado").innerHTML  = this.responseText;
+            document.getElementById("modalBodyModificarGanado").innerHTML  = this.responseText;
         }
     };
     http.open("POST",url);
     http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     http.send('opcion=actualizarGanado'
-            +'&idGanado='+idGanado
-            +'&numeroCria='+numeroCria
-            +'&numeroCriaAnterior='+numeroCriaAnterior
-            +'&tatuajeOreja='+tatuajeOreja
-            +'&sexo='+sexo
-            +'&intervaloPartos='+intervaloPartos
-            +'&proximoParto='+proximoParto
-            +'&novedad='+novedad
-            +'&fechaventaoevento='+fechaventaoevento
-            +'&fechaNacimiento='+fechaNacimiento
-            +'&fechaCompra='+fechaCompra
+    +'&idGanado='+idGanado
+    +'&numeroCria='+numeroCria
+    +'&numeroCriaAnterior='+numeroCriaAnterior
+    +'&tatuajeOreja='+tatuajeOreja
+    +'&sexo='+sexo
+    +'&intervaloPartos='+intervaloPartos
+    +'&proximoParto='+proximoParto
+    +'&novedad='+novedad
+    +'&fechaventaoevento='+fechaventaoevento
+    +'&fechaNacimiento='+fechaNacimiento
+    +'&fechaCompra='+fechaCompra
     );
 }
 
@@ -416,7 +416,7 @@ function registrarGanado()
         const http=new XMLHttpRequest();
         const url = 'ganado/ganado.php';
         http.onreadystatechange = function(){
-
+            
             if(this.readyState == 4 && this.status ==200){
                 document.getElementById("div_resultados_ganado").innerHTML  = this.responseText;
             }
@@ -424,83 +424,83 @@ function registrarGanado()
         http.open("POST",url);
         http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         http.send('opcion=registrarGanado'
-                // +'&codigo='+codigo
-                +'&idMadre='+idMadre
-                +'&fechaNacimiento='+fechaNacimiento
-                +'&evento='+evento
-                +'&numeroCria='+numeroCria
-                +'&tatuajeOreja='+tatuajeOreja
-                +'&sexo='+sexo
-                +'&intervaloPartos='+intervaloPartos
-                +'&proximoParto='+proximoParto
-                +'&fechaCompra='+fechaCompra
+        // +'&codigo='+codigo
+        +'&idMadre='+idMadre
+        +'&fechaNacimiento='+fechaNacimiento
+        +'&evento='+evento
+        +'&numeroCria='+numeroCria
+        +'&tatuajeOreja='+tatuajeOreja
+        +'&sexo='+sexo
+        +'&intervaloPartos='+intervaloPartos
+        +'&proximoParto='+proximoParto
+        +'&fechaCompra='+fechaCompra
         );
     }  
 }
 
 function  validaInfoNuevoGanado()
 {
-  
+    
     // if( document.getElementById('fechaNacimientoTxt').value == ''){
-    //     alert('Por favor seleccionar fecha');
-    //     document.getElementById('fechaNacimientoTxt').focus();
-    //     return 0;
-    // }
-    
-    if( document.getElementById('fechaComnpraUOtroTxt').value == ''){
-        alert('Por favor seleccionar fecha compra');
-        document.getElementById('fechaComnpraUOtroTxt').focus();
-        return 0;
+        //     alert('Por favor seleccionar fecha');
+        //     document.getElementById('fechaNacimientoTxt').focus();
+        //     return 0;
+        // }
+        
+        if( document.getElementById('fechaComnpraUOtroTxt').value == ''){
+            alert('Por favor seleccionar fecha compra');
+            document.getElementById('fechaComnpraUOtroTxt').focus();
+            return 0;
+        }
+        
+        if( document.getElementById('eventoTxt').value == '-1'){
+            alert('Por favor escoger evento');
+            document.getElementById('eventoTxt').focus();
+            return 0;
+        }
+        if( document.getElementById('numeroCriaTxt').value == ''){
+            alert('Por favor digitar nombre');
+            document.getElementById('numeroCriaTxt').focus();
+            return 0;
+        }
+        if( document.getElementById('tatuajeOrejaTxt').value == ''){
+            alert('Por favor digitar tatuaje Oreja');
+            document.getElementById('tatuajeOrejaTxt').focus();
+            return 0;
+        }
+        if( document.getElementById('sexoTxt').value == ''){
+            alert('Por favor escoger el género');
+            document.getElementById('sexoTxt').focus();
+            return 0;
+        }
+        return 1;
     }
     
-    if( document.getElementById('eventoTxt').value == '-1'){
-        alert('Por favor escoger evento');
-        document.getElementById('eventoTxt').focus();
-        return 0;
-    }
-    if( document.getElementById('numeroCriaTxt').value == ''){
-        alert('Por favor digitar nombre');
-        document.getElementById('numeroCriaTxt').focus();
-        return 0;
-    }
-    if( document.getElementById('tatuajeOrejaTxt').value == ''){
-        alert('Por favor digitar tatuaje Oreja');
-        document.getElementById('tatuajeOrejaTxt').focus();
-        return 0;
-    }
-    if( document.getElementById('sexoTxt').value == ''){
-        alert('Por favor escoger el género');
-        document.getElementById('sexoTxt').focus();
-        return 0;
-    }
-    return 1;
-}
-
-
-function realizarCargaArchivo(idGanado)
-{
-    // var idPedidoDev = document.getElementById('idPedidoDev').value;
-    // var idItemDev = document.getElementById('idItemDev').value;
-    // var obseDevolucion = document.getElementById('obseDevolucion').value;
-    // alert('clik en subir archivo ');
-    var inputFile = document.getElementById('archivo');
-    if (inputFile.files.length > 0) {
-        let formData = new FormData();
-        formData.append("archivo", inputFile.files[0]); // En la posición 0; es decir, el primer elemento
-        formData.append("opcion", 'realizarCargaArchivo'); // En la posición 0; es decir, el primer elemento
-        formData.append("idGanado", idGanado); // En la posición 0; es decir, el primer elemento
-        // formData.append("idPedidoDev", idPedidoDev); // En la posición 0; es decir, el primer elemento
+    
+    function realizarCargaArchivo(idGanado)
+    {
+        // var idPedidoDev = document.getElementById('idPedidoDev').value;
+        // var idItemDev = document.getElementById('idItemDev').value;
+        // var obseDevolucion = document.getElementById('obseDevolucion').value;
+        // alert('clik en subir archivo ');
+        var inputFile = document.getElementById('archivo');
+        if (inputFile.files.length > 0) {
+            let formData = new FormData();
+            formData.append("archivo", inputFile.files[0]); // En la posición 0; es decir, el primer elemento
+            formData.append("opcion", 'realizarCargaArchivo'); // En la posición 0; es decir, el primer elemento
+            formData.append("idGanado", idGanado); // En la posición 0; es decir, el primer elemento
+            // formData.append("idPedidoDev", idPedidoDev); // En la posición 0; es decir, el primer elemento
         // formData.append("idItemDev", idItemDev); // En la posición 0; es decir, el primer elemento
         // formData.append("obseDevolucion", obseDevolucion); // En la posición 0; es decir, el primer elemento
         fetch("ganado/ganado.php", {
             method: 'POST',
             body: formData,
         })
-            .then(respuesta => respuesta.text())
-            .then(decodificado => {
-                console.log(decodificado.archivo);
-                document.getElementById("div_cargue_archivo").innerHTML = 'Imagen Almacenada!!';
-            });
+        .then(respuesta => respuesta.text())
+        .then(decodificado => {
+            console.log(decodificado.archivo);
+            document.getElementById("div_cargue_archivo").innerHTML = 'Imagen Almacenada!!';
+        });
     } else {
         alert("Selecciona un archivo");
     }
@@ -509,19 +509,37 @@ function realizarCargaArchivo(idGanado)
     }, 300);
     // var inputFile = document.getElementById('imagen');
     // if (inputFile.files.length > 0) {
-    //     let formData = new FormData();
-    //     formData.append("file", inputFile.files[0]); // En la posición 0; es decir, el primer elemento
-    //     formData.append("opcion", 'subirFoto'); // En la posición 0; es decir, el primer elemento
-    //     fetch("subir/subir.php", {
-    //         method: 'POST',
-    //         body: formData,
-    //     })
-    //         .then(respuesta => respuesta.text())
-    //         .then(decodificado => {
-    //             console.log(decodificado.archivo);
-    //             document.getElementById("div_cargue_archivo").innerHTML = 'Cargue Realizado!!';
-    //         });
-    // } else {
-    //     alert("Selecciona un archivo");
-    // }
+        //     let formData = new FormData();
+        //     formData.append("file", inputFile.files[0]); // En la posición 0; es decir, el primer elemento
+        //     formData.append("opcion", 'subirFoto'); // En la posición 0; es decir, el primer elemento
+        //     fetch("subir/subir.php", {
+            //         method: 'POST',
+            //         body: formData,
+            //     })
+            //         .then(respuesta => respuesta.text())
+            //         .then(decodificado => {
+                //             console.log(decodificado.archivo);
+                //             document.getElementById("div_cargue_archivo").innerHTML = 'Cargue Realizado!!';
+                //         });
+                // } else {
+                    //     alert("Selecciona un archivo");
+                    // }
+    }
+
+                
+function eliminarImagenGanado(idImagenGanado)
+{
+    const http=new XMLHttpRequest();
+    const url = 'ganado/ganado.php';
+    http.onreadystatechange = function(){
+                            
+        if(this.readyState == 4 && this.status ==200){
+                document.getElementById("modalBodyVerImagenGanado").innerHTML  = this.responseText;
+            }
+    };
+    http.open("POST",url);
+    http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    http.send('opcion=eliminarImagenGanado'
+    +'&idImagenGanado='+idImagenGanado
+    );
 }

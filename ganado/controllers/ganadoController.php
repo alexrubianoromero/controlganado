@@ -100,9 +100,24 @@ class ganadoController
         {
             $this->realizarCargaArchivo($_REQUEST);
         }
+        if($_REQUEST['opcion']=='eliminarImagenGanado')
+        {
+            $this->eliminarImagenGanado($_REQUEST);
+        }
         
     }
     
+    public function eliminarImagenGanado($request){
+        // die('llego aca');
+        //eliminacion fisica 
+         $this->eliminarFisicamenteImagenGanado($request['idImagenGanado']);
+         //eliminacion del registro 
+         $this->imagenModel->deleteImagenGanado($request['idImagenGanado']); 
+        //  die('pasoo33');
+
+         echo 'Imagen Eliminada';
+
+    }
 
     public function realizarCargaArchivo($request)
     {
@@ -220,6 +235,12 @@ class ganadoController
             }
             // die('Archivo subido');
 
+    }
+
+    public function eliminarFisicamenteImagenGanado($idImagen)
+    {
+        $infoImagen = $this->imagenModel->traerInfoImageneGanadoIdImagen($idImagen);
+        unlink('../imagenes/'.$infoImagen['nombre']);
     }
 
 

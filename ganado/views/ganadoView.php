@@ -679,7 +679,7 @@ class ganadoView extends vista
                 <!-- <img src = "imagenes/imagen.jpg" width="300px;" > -->
                 <img src = "imagenes/<?php echo $imagen['nombre'] ?>" width="450px;" >
             </div>
-            <button class="btn btn-danger btn-sm mt-2">Eliminar</button>
+            <button class="btn btn-danger btn-sm mt-2" onclick="eliminarImagenGanado('<?php  echo $imagen['id'] ?>')">Eliminar</button>
         </div>
         <?php
     
